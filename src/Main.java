@@ -1,7 +1,8 @@
 public class Main {
+
     public static void main(String[] args) {
     int[] elements = {0,1,2,3,4,5,6,7,8,9,10};
-    int value = 8;
+    int value = 6;
 
     int linearResult = linear(elements, value);
     int binaryResult = binary(elements, value, 0, elements.length - 1);
@@ -10,7 +11,6 @@ public class Main {
     System.out.println(binaryResult);
     }
 
-    //линейный поиск
     public static int linear(int[] elements, int value){
         int schet = 0;
         for (int i = 0; i < elements.length; i++) {
@@ -23,7 +23,6 @@ public class Main {
         return schet;
     }
 
-    //бинарный поиск
     public static int binary(int[] elements, int value, int low, int high) {
         int index = -1;
         int schet = 0;
